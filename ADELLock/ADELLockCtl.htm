@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<TITLE>对象 ADELLockCtl 的 ATL 8.0 测试页</TITLE>
+</HEAD>
+<BODY>
+<script type="text/javascript" >
+//获取控件
+function GetMyControl(name)
+{
+	if(navigator.appName.toUpperCase() == "NETSCAPE")
+		return document.getElementById("FF_" + name);
+	else
+		return document.getElementById("IE_" + name);
+}
+function ADEL_Init()
+{
+    // - 只有nPort有用，其它只是为了保持与adel一致
+    var ctl = GetMyControl("ADELLockCtl");
+    var nSoftware = 18; // - 
+    var nPort = eval(tbPort.value);//将字符串转换成代码执行，并返回一个或者多个值
+    var nEncoder =0;
+    var nTMEncoder = 0;
+    
+    var nRet = ctl.Init(nSoftware, "", "", nPort, nEncoder, nTMEncoder);
+    
+    if(nRet == 0)
+        tbMsg.value = "初始化成功！";
+    else
+        alert("初始化失败：" + ctl.ErrMsg);
+}
+function ADEL_EndSession()
+{
+    var ctl = GetMyControl("ADELLockCtl");
+    var nRet = ctl.EndSession();
+    if(nRet == 0)
+        alert("EndSession success!");
+    else
+        alert(ctl.ErrMsg);
+}
+function ADEL_NewKey()
+{
+    var ctl = GetMyControl("ADELLockCtl");
+    var bDupKey = eval(cbDupKey.value);
+    
+    var nRet = ctl.NewKey(bDupKey,
+        tbRoom.value, 
+        tbStime.value, 
+        "",  //- tbGuestName无用，可为空
+        "" // - tbGuestID无用，可为空);
+    )
+    if(nRet == 0){
+        tbMsg.value = "发卡成功！";
+tbCardSn.value = ctl.CardSn;
+}
+    else
+        alert("发卡失败：" + ctl.ErrMsg);
+}
+
+function ADEL_ReadCard()
+{
+//    var ctl = document.GetElementById("IE_ADELLockCtl");
+ctl = GetMyControl("ADELLockCtl");
+    var nRet = ctl.ReadCard();
+    if(nRet == 0)
+    {
+        tbRoom.value = ctl.Room;
+        tbGate.value = ctl.Gate;
+        tbCardSn.value = ctl.CardSn;
+		tbStime.value = ctl.Stime;
+    }
+    else
+        alert(ctl.ErrMsg);
+}
+
+function ADEL_EraseCard()
+{
+ctl = GetMyControl("ADELLockCtl");
+    var nRet = ctl.EraseCard(0);
+    if(nRet == 0)
+    {
+        tbRoom.value = ctl.Room;
+        //tbGate.value = ctl.Gate;
+        tbCardSn.value = ctl.CardSn;
+		//tbStime.value = ctl.Stime;
+    }
+    else
+        alert(ctl.ErrMsg);
+}
+
+</script>
+
+<object ID="IE_ADELLockCtl" CLASSID="CLSID:C934ADA0-D568-4E72-9F53-7E01E8B25134"></OBJECT>
+<embed id="FF_ADELLockCtl" type="application/x-adellock" style="width: 0px; height: 0px;">
+
+<p>
+端口号: <input type="text" id="tbPort" style="width:100px" value="3"></input>(默认值为3)
+</p>
+<p>
+<button onclick="ADEL_Init();">初始化</button>
+<button onclick="ADEL_EndSession();">结束工作期</button></br>
+操作结果：<input type="text" id="tbMsg", style=""width:260px" />
+</p>
+<p>
+发卡类型：
+<select id="cbDupKey"> 
+	<option value="0" selected="selected">发新卡</option>
+	<option value="1">同住客人卡</option>
+</select></br>
+房间号：<input type="text" id="tbRoom" style="width:100px"></input>&nbsp(必填)</br>
+起始结束时间：<input type="text" id="tbStime" style="width:260px"></input>&nbsp(必填)</br>
+</p>
+
+<p>
+<button onclick="ADEL_NewKey();">写ADEL(同创)房卡</button>
+<button onclick="ADEL_ReadCard();">读ADEL(同创)房卡</button>
+<button onclick="ADEL_EraseCard();">擦除ADEL(同创)房卡</button>
+</p>
+
+<p>以下信息仅在 [读房卡] 时有用：</p>
+
+子房号: <input type="text" id="tbGate" style="width:60px"></input> （和adel的通道不是一回事）
+[out]CardSn: <input type="text" id="tbCardSn" style="width:120px"></input>
+
+</BODY>
+</HTML>
+ 

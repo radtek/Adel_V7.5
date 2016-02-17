@@ -1,0 +1,60 @@
+// ADELLock.idl : IDL source for ADELLock
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ADELLock.tlb) and marshalling code.
+
+#include "olectl.h"
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(CC57C928-A810-436B-9E82-2A093A590B80),
+	dual,
+	nonextensible,
+	pointer_default(unique) 
+]
+interface IADELLockCtl : IDispatch{
+	[propget, id(1)] HRESULT CardSn([out, retval] LONG* pVal);
+	[propget, id(2)] HRESULT ErrMsg([out, retval] BSTR* pVal);
+	[propget, id(3)] HRESULT Gate([out, retval] BSTR* pVal);
+	[propget, id(4)] HRESULT LastRet([out, retval] LONG* pVal);
+	[propget, id(5)] HRESULT Room([out, retval] BSTR* pVal);
+	[propget, id(6)] HRESULT Stime([out, retval] BSTR* pVal);
+	[propget, id(7)] HRESULT CheckInTime([out, retval] BSTR* pVal);
+	[propget, id(8)] HRESULT CheckOutTime([out, retval] BSTR* pVal);
+	[id(9)] HRESULT Init(LONG nSoftware, BSTR szServer, BSTR szUserName, LONG nPort, LONG nEncoder, LONG nTMEncoder, [out, retval]LONG* nRet);
+	[id(10)] HRESULT NewKey(LONG bDupKey, BSTR room, BSTR stime, BSTR guestname, BSTR guestid, [out, retval]LONG* nRet);
+	[id(11)] HRESULT ReadCard([out, retval]LONG* nRet);
+	[id(12)] HRESULT EraseCard(ULONG nCardSn, [out, retval]LONG* nRet);
+	[id(13)] HRESULT EndSession([out, retval]LONG* nRet);
+	[id(14)] HRESULT ReaderBeep(LONG nSound, [out, retval]LONG* nRet);
+};
+
+[
+	uuid(DA79016B-DA86-44F9-A5E8-CBF71B451457),
+	version(1.0),
+]
+library ADELLockLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(94DCCBD4-E722-4844-A271-2845920B2FDD)		
+	]
+	dispinterface _IADELLockCtlEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(C934ADA0-D568-4E72-9F53-7E01E8B25134),		
+		control
+	]
+	coclass ADELLockCtl
+	{
+		[default] interface IADELLockCtl;
+		[default, source] dispinterface _IADELLockCtlEvents;
+	};
+};
+

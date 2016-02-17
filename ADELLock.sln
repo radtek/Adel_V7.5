@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ADELLock", "ADELLock\ADELLock.vcxproj", "{C5F50522-FC67-4B6B-9BBF-CC22A549495C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ADELLockPS", "ADELLock\ADELLockPS.vcxproj", "{2FB6CFFC-B300-458C-AC33-C9CA09E04CDF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C5F50522-FC67-4B6B-9BBF-CC22A549495C} = {C5F50522-FC67-4B6B-9BBF-CC22A549495C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5F50522-FC67-4B6B-9BBF-CC22A549495C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C5F50522-FC67-4B6B-9BBF-CC22A549495C}.Debug|Win32.Build.0 = Debug|Win32
+		{C5F50522-FC67-4B6B-9BBF-CC22A549495C}.Release|Win32.ActiveCfg = Release|Win32
+		{C5F50522-FC67-4B6B-9BBF-CC22A549495C}.Release|Win32.Build.0 = Release|Win32
+		{2FB6CFFC-B300-458C-AC33-C9CA09E04CDF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2FB6CFFC-B300-458C-AC33-C9CA09E04CDF}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

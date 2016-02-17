@@ -1,0 +1,48 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (LocStarLock.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Processing .\ADELLock.idl
+  ADELLock.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\oaidl.idl
+  oaidl.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\objidl.idl
+  objidl.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\unknwn.idl
+  unknwn.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\wtypes.idl
+  wtypes.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\basetsd.h
+  basetsd.h
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\guiddef.h
+  guiddef.h
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\ocidl.idl
+  ocidl.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\oleidl.idl
+  oleidl.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\servprov.idl
+  servprov.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\urlmon.idl
+  urlmon.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\msxml.idl
+  msxml.idl
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\oaidl.acf
+  oaidl.acf
+  Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\ocidl.acf
+  ocidl.acf
+  stdafx.cpp
+  TimerOperator.cpp
+e:\work\各类门锁制作包\爱迪尔\adel_v7.5\adellock\timeroperator.cpp(573): warning C4101: 'tempStr' : unreferenced local variable
+  ScriptablePluginObjectBase.cpp
+  Plugin.cpp
+  np_entry.cpp
+  npp_gate.cpp
+  npn_gate.cpp
+  ADELLockCtl.cpp
+  ADELLock.cpp
+  ffgsfgsfg.cpp
+  ControlBase.cpp
+  Generating Code...
+  dllmain.cpp
+  ADELLock_i.c
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1193,5): warning MSB8012: TargetPath(E:\Work\各类门锁制作包\爱迪尔\Adel_V7.5\Debug\ADELLock.dll) does not match the Linker's OutputFile property value (E:\Work\各类门锁制作包\爱迪尔\Adel_V7.5\Debug\npAdelLock.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1195,5): warning MSB8012: TargetName(ADELLock) does not match the Linker's OutputFile property value (npAdelLock). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library E:\Work\各类门锁制作包\爱迪尔\Adel_V7.5\Debug\npAdelLock.lib and object E:\Work\各类门锁制作包\爱迪尔\Adel_V7.5\Debug\npAdelLock.exp
+  ADELLock.vcxproj -> E:\Work\各类门锁制作包\爱迪尔\Adel_V7.5\Debug\ADELLock.dll

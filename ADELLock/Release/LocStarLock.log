@@ -1,0 +1,86 @@
+﻿Build started 2015/1/23 14:22:43.
+     1>Project "D:\Bzhang\SDK\LocStarLockNoDB\LocStarLock\LocStarLock.vcxproj" on node 2 (Rebuild target(s)).
+     1>Midl:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\bin\midl.exe /D NDEBUG /W1 /nologo /char signed /env win32 /Oicf /h "LocStarLock_i.h" /iid "LocStarLock_i.c" /proxy "LocStarLock_p.c" /tlb "Release\LocStarLock.tlb" /robust LocStarLock.idl 
+         Processing .\LocStarLock.idl
+         LocStarLock.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\oaidl.idl
+         oaidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\objidl.idl
+         objidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\unknwn.idl
+         unknwn.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\wtypes.idl
+         wtypes.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\basetsd.h
+         basetsd.h
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\guiddef.h
+         guiddef.h
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\ocidl.idl
+         ocidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\oleidl.idl
+         oleidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\servprov.idl
+         servprov.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\urlmon.idl
+         urlmon.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\msxml.idl
+         msxml.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\oaidl.acf
+         oaidl.acf
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\ocidl.acf
+         ocidl.acf
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /D _ATL_STATIC_REGISTRY /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\LocStarLock.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /D _ATL_STATIC_REGISTRY /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\LocStarLock.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt BH.cpp ControlBase.cpp ffgsfgsfg.cpp LocStarLock.cpp LocStarLockCtl.cpp npn_gate.cpp npp_gate.cpp np_entry.cpp Plugin.cpp ScriptablePluginObjectBase.cpp TimerOperator.cpp
+         BH.cpp
+         ControlBase.cpp
+     1>d:\bzhang\sdk\locstarlocknodb\locstarlock\TimerOperator.cpp(573): warning C4101: 'tempStr' : unreferenced local variable
+     1>ControlBase.cpp(253): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>ControlBase.cpp(287): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         ffgsfgsfg.cpp
+         LocStarLock.cpp
+         LocStarLockCtl.cpp
+         npn_gate.cpp
+         npp_gate.cpp
+         np_entry.cpp
+         Plugin.cpp
+         ScriptablePluginObjectBase.cpp
+         TimerOperator.cpp
+     1>TimerOperator.cpp(573): warning C4101: 'tempStr' : unreferenced local variable
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /D _ATL_STATIC_REGISTRY /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /D _ATL_STATIC_REGISTRY /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt LocStarLock_i.c
+         LocStarLock_i.c
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\bin\rc.exe /D NDEBUG /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /l"0x0409" /IRelease\ /nologo /fo"Release\LocStarLock.res" LocStarLock.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1137,5): warning MSB8012: TargetPath(D:\Bzhang\SDK\LocStarLockNoDB\Release\LocStarLock.dll) does not match the Linker's OutputFile property value (D:\Bzhang\SDK\LocStarLockNoDB\Release\npTemicLock.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1139,5): warning MSB8012: TargetName(LocStarLock) does not match the Linker's OutputFile property value (npTemicLock). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Bzhang\SDK\LocStarLockNoDB\Release\npTemicLock.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\LocStarLock.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Bzhang\SDK\LocStarLockNoDB\Release\LocStarLock.pdb" /SUBSYSTEM:WINDOWS,"5.01" /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH /DLL Release\LocStarLock.res
+         Release\BH.obj
+         Release\ControlBase.obj
+         Release\dllmain.obj
+         Release\ffgsfgsfg.obj
+         Release\LocStarLock.obj
+         Release\LocStarLockCtl.obj
+         Release\LocStarLock_i.obj
+         Release\npn_gate.obj
+         Release\npp_gate.obj
+         Release\np_entry.obj
+         Release\Plugin.obj
+         Release\ScriptablePluginObjectBase.obj
+         Release\stdafx.obj
+         Release\TimerOperator.obj
+            Creating library D:\Bzhang\SDK\LocStarLockNoDB\Release\npTemicLock.lib and object D:\Bzhang\SDK\LocStarLockNoDB\Release\npTemicLock.exp
+     1>npTemicLock.exp : warning LNK4070: /OUT:npLocStarLock.dll directive in .EXP differs from output filename 'D:\Bzhang\SDK\LocStarLockNoDB\Release\npTemicLock.dll'; ignoring directive
+         LocStarLock.vcxproj -> D:\Bzhang\SDK\LocStarLockNoDB\Release\LocStarLock.dll
+       RegisterOutput:
+         regsvr32 /s "D:\Bzhang\SDK\LocStarLockNoDB\Release\npTemicLock.dll"
+     1>Done Building Project "D:\Bzhang\SDK\LocStarLockNoDB\LocStarLock\LocStarLock.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.08
